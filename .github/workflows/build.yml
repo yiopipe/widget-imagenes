@@ -9,7 +9,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pillow pyinstaller
-      - run: pyinstaller --onefile --noconsole --name WidgetImagenes --icon mi_icono.ico --add-data "imagenes;imagenes" widget.py
+      - run: pyinstaller --onefile --noconsole --name WidgetImagenes --icon mollyicono.ico --add-data "imagenes;imagenes" widget.py
       - uses: actions/upload-artifact@v4
         with:
           name: WidgetImagenes
